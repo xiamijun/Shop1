@@ -8,8 +8,8 @@ function buildInfo()
     if (! $_FILES) {
         return;
     }
+    $i = 0;
     foreach ($_FILES as $v) {
-        $i = 0;
         // 单文件
         if (is_string($v['name'])) {
             $files[$i] = $v;
